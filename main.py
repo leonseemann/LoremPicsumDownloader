@@ -5,9 +5,9 @@ clear = lambda: os.system('cls')
 
 url = str(input("Url: "))
 
-wie_viele = int(input("Wie viele bilder? "))
+howMuch = int(input("Wie viele bilder? "))
 
-for x in range(1, wie_viele + 1):
-    urllib.request.urlretrieve(url, "hintergrund-" + str(x) + ".jpg")
+for x in range(1, howMuch + 1):
+    urllib.request.urlretrieve(url, "background-" + str(x) + ".jpg")
     clear()
-    print(str(x / wie_viele * 100))
+    print(str(x / howMuch * 100))
