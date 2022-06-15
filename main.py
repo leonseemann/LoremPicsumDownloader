@@ -15,5 +15,7 @@ howMuch = int(input("How much: "))
 
 Path(nameOfFiles).mkdir(parents=True, exist_ok=True)
 
+pictureCount = len(os.listdir(nameOfFiles))
+
 for x in tqdm(range(1, howMuch + 1)):
-    urllib.request.urlretrieve(url, nameOfFiles + "/" + nameOfFiles + "-" + str(x) + ".jpg")
+    urllib.request.urlretrieve(url, nameOfFiles + "/" + nameOfFiles + "-" + str(pictureCount + x) + ".jpg")
