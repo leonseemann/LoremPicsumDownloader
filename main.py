@@ -1,5 +1,8 @@
-import urllib.request
 import os
+import urllib.request
+from pathlib import Path
+
+from tqdm import tqdm
 
 
 def cls():
@@ -10,9 +13,7 @@ url = str(input("Url: "))
 nameOfFiles = str(input("Name of files: "))
 howMuch = int(input("How much: "))
 
-cls()
+Path(nameOfFiles).mkdir(parents=True, exist_ok=True)
 
-for x in range(1, howMuch + 1):
-    urllib.request.urlretrieve(url, nameOfFiles + "-" + str(x) + ".jpg")
-    cls()
-    print(str(x / howMuch * 100))
+for x in tqdm(range(1, howMuch + 1)):
+    urllib.request.urlretrieve(url, nameOfFiles + "/" + nameOfFiles + "-" + str(x) + ".jpg")
