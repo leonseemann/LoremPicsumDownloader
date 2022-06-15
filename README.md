@@ -2,6 +2,7 @@
 Downloads an amount of Pictures
 
 Put the program into a folder where you want to download the wallpapers, then enter the URL, name and a amount of wallpapers.
+A subfolder will be created with the same name as from the images.
 
 ## Pretty Progress bar
 [Pretty Progress bar](https://github.com/leonseemann/LoremPicsumDownloader/tree/progress_bar)
