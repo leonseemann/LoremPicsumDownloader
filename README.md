@@ -1,9 +1,7 @@
 # (Python 3) LoremPicsumDownloader
 Downloads an amount of Pictures
 
-Put the program into a folder where you want to download the wallpapers, then enter the URL and a number.
-
-Clear function only works on Windows!
+Put the program into a folder where you want to download the wallpapers, then enter the URL, name and a amount of wallpapers.
 
 # Exaple URLs
 
